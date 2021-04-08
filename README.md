@@ -13,6 +13,7 @@ Temporo mandibular joint segmentation algorithm in computed tomography images
 
 ## How to run this program
 	
+	The best way is to get the docker container that has the app deployed in it. 
 	The input is an image in nifti format, the output is the image with _seg 
 
 ```
