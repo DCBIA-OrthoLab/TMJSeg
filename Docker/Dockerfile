@@ -11,9 +11,10 @@ RUN mkdir MCR_R2018b_glnxa64_installer
 RUN unzip MCR_R2018b_glnxa64_installer.zip -d MCR_R2018b_glnxa64_installer
 RUN MCR_R2018b_glnxa64_installer/install -mode silent -agreeToLicense yes
 
-ENV LD_LIBRARY_PATH=/usr/local/MATLAB/MATLAB_Runtime/v95/runtime/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v95/bin/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v95/sys/os/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v95/extern/bin/glnxa64
+ENV LD_LIBRARY_PATH=/usr/local/MATLAB/MATLAB_Runtime/v95/runtime/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v95/bin/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v95/sys/os/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v95/extern/bin/glnxa64:$LD_LIBRARY_PATH
 
 RUN wget https://github.com/DCBIA-OrthoLab/tmjseg/releases/download/v1.0.0/TMJSeg
+RUN chmod +x ./TMJSeg
 
 RUN mkdir /app/.nvm
 
