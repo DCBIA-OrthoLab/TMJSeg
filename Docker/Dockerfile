@@ -25,5 +25,5 @@ RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | 
     && nvm install $NODE_VERSION \
     && npm i clusterpost-execution -g
 
-ENV PATH=$NVM_DIR/versions/node/$NODE_VERSION/bin:$PATH
+ENV PATH=/app:$NVM_DIR/versions/node/$NODE_VERSION/bin:$PATH
 
