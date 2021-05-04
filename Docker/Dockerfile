@@ -5,7 +5,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
         wget \
         zip \
-	libxt6
+	libxt6 \
+	openjdk-8-jdk
 
 RUN wget https://ssd.mathworks.com/supportfiles/downloads/R2018b/deployment_files/R2018b/installers/glnxa64/MCR_R2018b_glnxa64_installer.zip
 RUN mkdir MCR_R2018b_glnxa64_installer
