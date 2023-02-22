@@ -1,5 +1,5 @@
-# tmjseg
-Temporo mandibular joint segmentation algorithm in computed tomography images
+# TMJSeg
+Temporomandibular joint segmentation algorithm for computed tomography images
 
 ## How to use a Matlab code as a standalone application 
 
